@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAVAL — специальные предложения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container header__top-inner">
+        <a href="#" class="header__logo" aria-label="HAVAL">
+          <span class="header__dealer">Официальный дилер</span>
+          <img class="header__logo-mark" src="images/haval-logo.png.png" alt="HAVAL" width="120" height="28">
+        </a>
+        <a href="tel:+70000000000" class="header__phone">
+          <svg class="header__icon" width="18" height="18" aria-hidden="true"><use href="images/icons.svg#phone"></use></svg>
+          <span>+7 (000) 000-00-00</span>
+        </a>
+        <div class="header__meta">
+          <svg class="header__icon" width="18" height="18" aria-hidden="true"><use href="images/icons.svg#pin"></use></svg>
+          <span>г. Москва</span>
+          <span class="header__meta-divider">·</span>
+          <span>Часы работы: с 09:00 до 21:00</span>
+        </div>
+        <button type="button" class="header__burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="header__nav" data-nav>
+      <div class="container header__nav-inner">
+        <ul class="header__models">
+          <li><a href="#m6">M6</a></li>
+          <li><a href="#dargo-x">DARGO X</a></li>
+          <li><a href="#dargo">DARGO</a></li>
+          <li><a href="#jolion">JOLION</a></li>
+          <li><a href="#f7x">F7x</a></li>
+          <li><a href="#f7">F7</a></li>
+          <li><a href="#h9">H9</a></li>
+          <li><a href="#poer">GWM Poer</a></li>
+          <li><a href="#poer-kk">GWM Poer KINGKONG</a></li>
+        </ul>
+        <ul class="header__actions">
+          <li><a href="javascript:;" data-fancybox data-type="inline" data-src="#popup-form">Подобрать комплектацию</a></li>
+          <li><a href="javascript:;" data-fancybox data-type="inline" data-src="#popup-form">Тест-драйв</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide hero-slide">
+            <div
+              class="hero-slide__bg"
+              role="img"
+              aria-label="Увеличиваем выгоды на HAVAL в Химках к Чёрной пятнице"
+            ></div>
+          </article>
+        </div>
+        <button type="button" class="hero-swiper__prev" aria-label="Предыдущий слайд"></button>
+        <button type="button" class="hero-swiper__next" aria-label="Следующий слайд"></button>
+        <div class="hero-swiper__pagination"></div>
+      </div>
+    </section>
+
+    <section class="promo-timer">
+      <div class="container promo-timer__inner">
+        <div class="promo-timer__main">
+          <p class="promo-timer__text">Оставьте заявку и зафиксируйте условия</p>
+          <div class="promo-timer__clock" id="promo-countdown">
+            <div
+              class="sinoby-timer"
+              data-lazy="true"
+              data-config="{&quot;type&quot;:&quot;duration&quot;,&quot;durationSeconds&quot;:777600,&quot;durationStartMode&quot;:&quot;first-visit&quot;,&quot;preset&quot;:&quot;rings-soft&quot;,&quot;theme&quot;:&quot;light&quot;,&quot;alignment&quot;:&quot;left&quot;,&quot;scale&quot;:1,&quot;maxWidth&quot;:500,&quot;hideOnComplete&quot;:false,&quot;visibility&quot;:{&quot;days&quot;:true,&quot;hours&quot;:true,&quot;minutes&quot;:true,&quot;seconds&quot;:true,&quot;labels&quot;:true,&quot;separator&quot;:true},&quot;labels&quot;:{&quot;days&quot;:&quot;дней&quot;,&quot;hours&quot;:&quot;часов&quot;,&quot;minutes&quot;:&quot;минут&quot;,&quot;seconds&quot;:&quot;секунд&quot;},&quot;style&quot;:{&quot;digitsFont&quot;:&quot;Manrope, sans-serif&quot;,&quot;labelsFont&quot;:&quot;Manrope, sans-serif&quot;,&quot;digitSize&quot;:46,&quot;labelSize&quot;:10,&quot;labelGap&quot;:4,&quot;digitGap&quot;:14,&quot;digitColor&quot;:&quot;#111111&quot;,&quot;labelColor&quot;:&quot;#666666&quot;,&quot;separatorColor&quot;:&quot;#111111&quot;,&quot;ringCurrentColor&quot;:&quot;#00cabf&quot;,&quot;ringRemainingColor&quot;:&quot;#e5e5e5&quot;,&quot;ringThickness&quot;:4,&quot;ringRadius&quot;:48,&quot;ringDirection&quot;:&quot;cw&quot;,&quot;ringLineMode&quot;:&quot;solid&quot;,&quot;ringRemainingMode&quot;:&quot;solid&quot;,&quot;separatorText&quot;:&quot;:&quot;,&quot;separatorSize&quot;:24}}"
+            ></div>
+          </div>
+        </div>
+        <a href="javascript:;" class="btn btn--primary promo-timer__btn" data-fancybox data-type="inline" data-src="#popup-form">Зафиксировать условия</a>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <div class="swiper catalog-swiper">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide car-card" id="m6">
+              <div class="car-card__badge">
+                <span style="color: #ffffff">В наличии</span>
+                <strong>21 автомобиль</strong>
+              </div>
+              <div class="car-card__panel">
+                <div class="car-card__top">
+                  <div class="car-card__info">
+                    <h2 class="car-card__title">HAVAL M6</h2>
+                    <p class="car-card__benefit">Выгода до <strong>410&nbsp;000&nbsp;₽</strong></p>
+                  </div>
+                  <a href="javascript:;" class="car-card__test-drive" data-fancybox data-type="inline" data-src="#popup-form">
+                    <span class="car-card__test-drive-icon" aria-hidden="true">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="28" fill="#00CABF"/>
+                        <path d="M17.1 8.9l2 2-7 7H9.9v-2.2l7.2-6.8z" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    Записаться на тест-драйв
+                  </a>
+                </div>
+                <div class="car-card__visual">
+                  <div class="car-card__decor" aria-hidden="true"></div>
+                  <img class="car-card__photo" src="images/haval-m6-black.png" alt="HAVAL M6">
+                </div>
+              </div>
+              <ul class="car-card__colors" aria-label="Цвета кузова">
+                <li><button type="button" class="is-active" style="--color:#000000" aria-label="Чёрный" data-image="images/haval-m6-black.png"></button></li>
+                <li><button type="button" style="--color:#e7e7e7" aria-label="Серый" data-image="images/haval-m6-grey.png"></button></li>
+                <li><button type="button" style="--color:#a1a1a1" aria-label="Серебро" data-image="images/haval-m6-white.png"></button></li>
+              </ul>
+              <ul class="car-card__features">
+                <li class="car-card__feature car-card__feature--benefit">
+                  <span class="car-card__feature-icon" aria-hidden="true"><img src="icons/benefit-icon.png" width="28" height="28" alt=""></span>
+                  <span>Выгода<br>по госпрограмме</span>
+                </li>
+                <li class="car-card__feature">
+                  <span class="car-card__feature-icon" aria-hidden="true"><img src="icons/trade-in-icon.png" width="28" height="28" alt=""></span>
+                  <span>Максимальные выгоды по трейд-ин</span>
+                </li>
+                <li class="car-card__feature">
+                  <span class="car-card__feature-icon" aria-hidden="true"><img src="icons/casco-icon.png" width="28" height="28" alt=""></span>
+                  <span>КАСКО в подарок</span>
+                </li>
+                <li class="car-card__feature">
+                  <span class="car-card__feature-icon" aria-hidden="true"><img src="icons/winter-tyres-icon.png" width="28" height="28" alt=""></span>
+                  <span>Зимние шины в подарок</span>
+                </li>
+                <li class="car-card__feature">
+                  <span class="car-card__feature-icon" aria-hidden="true"><img src="icons/gifts-icon.png" width="28" height="28" alt=""></span>
+                  <span>Доп.оборудование<br>на 100&nbsp;000&nbsp;₽ в подарок</span>
+                </li>
+              </ul>
+              <div class="car-card__actions">
+                <a href="javascript:;" class="btn btn--primary" data-fancybox data-type="inline" data-src="#popup-form">Узнать стоимость</a>
+                <a href="javascript:;" class="btn btn--dark" data-fancybox data-type="inline" data-src="#popup-form">Рассчитать кредит</a>
+                <a href="javascript:;" class="btn btn--outline" data-fancybox data-type="inline" data-src="#popup-form">Подобрать комплектацию</a>
+              </div>
+            </article>
+
+
+            <article class="swiper-slide car-card" id="dargo-x">
+              <div class="car-card__badge">
+                <span style="color: #ffffff">В наличии</span>
+                <strong>14 автомобилей</strong>
+              </div>
+              <div class="car-card__panel">
+                <div class="car-card__top">
+                  <div class="car-card__info">
+                    <h2 class="car-card__title">HAVAL DARGO X</h2>
+                    <p class="car-card__benefit">Выгода до <strong>320&nbsp;000&nbsp;₽</strong></p>
+                  </div>
+                  <a href="javascript:;" class="car-card__test-drive" data-fancybox data-type="inline" data-src="#popup-form">
+                    <span class="car-card__test-drive-icon" aria-hidden="true">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="28" fill="#00CABF"/>
+                        <path d="M17.1 8.9l2 2-7 7H9.9v-2.2l7.2-6.8z" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    Записаться на тест-драйв
+                  </a>
+                </div>
+                <div class="car-card__visual">
+                  <div class="car-card__decor" aria-hidden="true"></div>
+                  <img class="car-card__photo" src="images/haval-dargo-x-red.png" alt="HAVAL DARGO X">
+                </div>
+              </div>
+              <ul class="car-card__colors" aria-label="Цвета кузова">
+                <li><button type="button" class="is-active" style="--color:#c45c2a" aria-label="Оранжевый" data-image="images/haval-dargo-x-red.png"></button></li>
+                <li><button type="button" style="--color:#1a1a1a" aria-label="Чёрный" data-image="images/haval-dargo-x-black.png"></button></li>
+                <li><button type="button" style="--color:#8b9199" aria-label="Серый" data-image="images/haval-dargo-x-grey.png"></button></li>
+                <li><button type="button" style="--color:#3d4550" aria-label="Графит" data-image="images/haval-dargo-x-light-black.png"></button></li>
+              </ul>
+              <ul class="car-card__features">
+                <li class="car-card__feature car-card__feature--benefit">
+                  <span class="car-card__feature-icon" aria-hidden="true"><img src="icons/benefit-icon.png" width="28" height="28" alt=""></span>
+                  <span>Выгода<br>по госпрограмме</span>
+                </li>
+                <li class="car-card__feature">
+                  <span class="car-card__feature-icon" aria-hidden="true"><img src="icons/trade-in-icon.png" width="28" height="28" alt=""></span>
+                  <span>Максимальные выгоды по трейд-ин</span>
+                </li>
+                <li class="car-card__feature">
+                  <span class="car-card__feature-icon" aria-hidden="true"><img src="icons/casco-icon.png" width="28" height="28" alt=""></span>
+                  <span>КАСКО в подарок</span>
+                </li>
+                <li class="car-card__feature">
+                  <span class="car-card__feature-icon" aria-hidden="true"><img src="icons/winter-tyres-icon.png" width="28" height="28" alt=""></span>
+                  <span>Зимние шины в подарок</span>
+                </li>
+                <li class="car-card__feature">
+                  <span class="car-card__feature-icon" aria-hidden="true"><img src="icons/gifts-icon.png" width="28" height="28" alt=""></span>
+                  <span>Доп.оборудование<br>на 100&nbsp;000&nbsp;₽ в подарок</span>
+                </li>
+              </ul>
+              <div class="car-card__actions">
+                <a href="javascript:;" class="btn btn--primary" data-fancybox data-type="inline" data-src="#popup-form">Узнать стоимость</a>
+                <a href="javascript:;" class="btn btn--dark" data-fancybox data-type="inline" data-src="#popup-form">Рассчитать кредит</a>
+                <a href="javascript:;" class="btn btn--outline" data-fancybox data-type="inline" data-src="#popup-form">Подобрать комплектацию</a>
+              </div>
+            </article>
+
+
+            <!-- В макете только M6 и DARGO X. Jolion и F7 отключены.
+            <article class="swiper-slide car-card" id="jolion">
+              <div class="car-card__badge">В наличии 18 автомобилей</div>
+              <div class="car-card__head">
+                <h2 class="car-card__title">HAVAL JOLION</h2>
+                <a href="javascript:;" class="car-card__test-drive" data-fancybox data-type="inline" data-src="#popup-form">
+                  <svg width="16" height="16" aria-hidden="true"><use href="images/icons.svg#wheel"></use></svg>
+                  Записаться на тест-драйв
+                </a>
+              </div>
+              <p class="car-card__benefit">Выгода до <strong>280 000 ₽</strong></p>
+              <div class="car-card__visual">
+                <img class="car-card__photo" src="images/placeholder-car.svg" alt="HAVAL JOLION">
+              </div>
+              <ul class="car-card__colors" aria-label="Цвета кузова">
+                <li><button type="button" class="is-active" style="color-var:#f4f4f4" aria-label="Белый"></button></li>
+                <li><button type="button" style="color-var:#8b9199" aria-label="Серый"></button></li>
+                <li><button type="button" style="color-var:#1a1a1a" aria-label="Чёрный"></button></li>
+              </ul>
+              <ul class="car-card__features">
+                <li>Выгода по госпрограмме</li>
+                <li>КАСКО в подарок</li>
+                <li>Доп. оборудование в подарок</li>
+                <li>Максимальная выгода по трейд-ин</li>
+                <li>Зимние шины в подарок</li>
+              </ul>
+              <div class="car-card__actions">
+                <a href="javascript:;" class="btn btn_primary" data-fancybox data-type="inline" data-src="#popup-form">Узнать стоимость</a>
+                <a href="javascript:;" class="btn btn_dark" data-fancybox data-type="inline" data-src="#popup-form">Рассчитать кредит</a>
+                <a href="javascript:;" class="btn btn_outline" data-fancybox data-type="inline" data-src="#popup-form">Подобрать комплектацию</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide car-card" id="f7">
+              <div class="car-card__badge">В наличии 9 автомобилей</div>
+              <div class="car-card__head">
+                <h2 class="car-card__title">HAVAL F7</h2>
+                <a href="javascript:;" class="car-card__test-drive" data-fancybox data-type="inline" data-src="#popup-form">
+                  <svg width="16" height="16" aria-hidden="true"><use href="images/icons.svg#wheel"></use></svg>
+                  Записаться на тест-драйв
+                </a>
+              </div>
+              <p class="car-card__benefit">Выгода до <strong>350 000 ₽</strong></p>
+              <div class="car-card__visual">
+                <img class="car-card__photo" src="images/placeholder-car.svg" alt="HAVAL F7">
+              </div>
+              <ul class="car-card__colors" aria-label="Цвета кузова">
+                <li><button type="button" class="is-active" style="color-var:#1a1a1a" aria-label="Чёрный"></button></li>
+                <li><button type="button" style="color-var:#6b2d3e" aria-label="Бордовый"></button></li>
+                <li><button type="button" style="color-var:#c0c4c8" aria-label="Серебро"></button></li>
+              </ul>
+              <ul class="car-card__features">
+                <li>Выгода по госпрограмме</li>
+                <li>КАСКО в подарок</li>
+                <li>Доп. оборудование в подарок</li>
+                <li>Максимальная выгода по трейд-ин</li>
+                <li>Зимние шины в подарок</li>
+              </ul>
+              <div class="car-card__actions">
+                <a href="javascript:;" class="btn btn_primary" data-fancybox data-type="inline" data-src="#popup-form">Узнать стоимость</a>
+                <a href="javascript:;" class="btn btn_dark" data-fancybox data-type="inline" data-src="#popup-form">Рассчитать кредит</a>
+                <a href="javascript:;" class="btn btn_outline" data-fancybox data-type="inline" data-src="#popup-form">Подобрать комплектацию</a>
+              </div>
+            </article>
+            -->
+          </div>
+          <div class="catalog-swiper__nav">
+            <button type="button" class="catalog-swiper__prev" aria-label="Предыдущая модель"></button>
+            <button type="button" class="catalog-swiper__next" aria-label="Следующая модель"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <a href="#" class="footer__logo" aria-label="HAVAL">
+        <img src="images/logo-haval.svg" alt="HAVAL" width="100" height="24">
+      </a>
+      <div class="footer__info">
+        <p>Официальный дилер HAVAL · г. Москва</p>
+        <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+      </div>
+      <p class="footer__copy">© 2026. Информация не является публичной офертой.</p>
+    </div>
+  </footer>
+
+  <div class="popup-form" id="popup-form" style="display:none;">
+    <h3 class="popup-form__title">Оставьте заявку</h3>
+    <p class="popup-form__subtitle">Мы перезвоним и зафиксируем условия</p>
+    <form class="popup-form__form" action="#" method="post" data-callback-form>
+      <label class="popup-form__field">
+        <span class="popup-form__label">Номер телефона</span>
+        <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+      </label>
+      <button type="submit" class="btn btn--primary btn--full">Отправить</button>
+      <p class="popup-form__note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://timer.sinoby.ru/public/assets/embed/timer-core.min.js?v=20260514a"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

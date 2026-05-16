@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="phone" viewBox="0 0 18 18">
+    <path d="M3.5 1.5h3l1.2 3.2-1.9 1.1a10.5 10.5 0 004.6 4.6l1.1-1.9 3.2 1.2v3c0 .8-.7 1.5-1.5 1.5C8.2 14.2 3.8 9.8 3.5 3z" fill="currentColor"/>
+  </symbol>
+  <symbol id="pin" viewBox="0 0 18 18">
+    <path d="M9 1.5a5.25 5.25 0 00-5.25 5.25c0 3.94 5.25 10.5 5.25 10.5s5.25-6.56 5.25-10.5A5.25 5.25 0 009 1.5zm0 7.13a1.88 1.88 0 110-3.76 1.88 1.88 0 010 3.76z" fill="currentColor"/>
+  </symbol>
+  <symbol id="wheel" viewBox="0 0 16 16">
+    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2" fill="none"/>
+    <circle cx="8" cy="8" r="1.5" fill="currentColor"/>
+    <path d="M8 2v3M8 11v3M2 8h3M11 8h3" stroke="currentColor" stroke-width="1.2"/>
+  </symbol>
+</svg>
