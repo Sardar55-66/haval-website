@@ -16,18 +16,24 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
 
+    var catalogEl = document.querySelector(".catalog-swiper");
     var catalogSwiper = null;
     var catalogMq = window.matchMedia("(max-width: 992px)");
 
     function initCatalogSwiper() {
+      if (!catalogEl) return;
+
       if (catalogMq.matches && !catalogSwiper) {
-        catalogSwiper = new Swiper(".catalog-swiper", {
+        catalogSwiper = new Swiper(catalogEl, {
           slidesPerView: 1,
           spaceBetween: 20,
           speed: 500,
+          watchOverflow: true,
+          observer: true,
+          observeParents: true,
           navigation: {
-            nextEl: ".catalog-swiper__next",
-            prevEl: ".catalog-swiper__prev",
+            nextEl: catalogEl.querySelector(".catalog-swiper__next"),
+            prevEl: catalogEl.querySelector(".catalog-swiper__prev"),
           },
         });
       } else if (!catalogMq.matches && catalogSwiper) {

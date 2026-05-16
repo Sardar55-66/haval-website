@@ -450,20 +450,10 @@ button {
 }
 
 .catalog-swiper {
-  overflow: visible;
-}
-
-.catalog-swiper .swiper-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  justify-items: center;
-  transform: none !important;
+  overflow: hidden;
 }
 
 .catalog-swiper .swiper-slide {
-  width: 100% !important;
-  max-width: 560px;
   height: auto;
 }
 
@@ -838,10 +828,6 @@ button {
     font-size: 10px;
   }
 
-  .catalog-swiper .swiper-wrapper {
-    grid-template-columns: 1fr;
-  }
-
   .promo-timer__inner {
     flex-direction: column;
     align-items: stretch;
@@ -936,17 +922,8 @@ button {
     padding: 32px 0 56px;
   }
 
-  .catalog-swiper {
-    overflow: hidden;
-  }
-
-  .catalog-swiper .swiper-wrapper {
-    display: flex;
-    gap: 0;
-  }
-
   .catalog-swiper .swiper-slide {
-    width: 100% !important;
+    width: 100%;
     max-width: none;
   }
 
@@ -964,11 +941,23 @@ button {
 
   .catalog-swiper__prev,
   .catalog-swiper__next {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border: 1px solid var(--color-border);
     border-radius: 50%;
     background: var(--color-white);
+    cursor: pointer;
+    transition: opacity var(--transition);
+  }
+
+  .catalog-swiper__prev.swiper-button-disabled,
+  .catalog-swiper__next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: default;
+    pointer-events: none;
   }
 
   .catalog-swiper__prev::before,
@@ -998,6 +987,31 @@ button {
   .footer__copy {
     text-align: center;
     max-width: none;
+  }
+}
+
+@media (min-width: 993px) {
+  .catalog-swiper {
+    overflow: visible;
+  }
+
+  .catalog-swiper .swiper-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    justify-items: center;
+    transform: none !important;
+  }
+
+  .catalog-swiper .swiper-slide {
+    width: 100% !important;
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 993px) {
+  .catalog-swiper .swiper-wrapper {
+    grid-template-columns: 1fr;
   }
 }
 
